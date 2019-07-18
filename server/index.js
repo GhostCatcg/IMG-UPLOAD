@@ -1,7 +1,7 @@
 const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
-
+const router = require("koa-router")
 const app = new Koa()
 
 // Import and Set Nuxt.js options
@@ -11,13 +11,6 @@ config.dev = !(app.env === 'production')
 
 
 // 上传图片路由功能
-
-
-
-
-
-
-
 
 
 
