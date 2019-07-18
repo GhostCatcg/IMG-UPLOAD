@@ -1,13 +1,20 @@
 <template>
   <div>
+    <input type="text" v-model="phonenumber">
     <input type="file" @change="uploadImg($event,'HF')" />
-    <p>发送</p>
+    <p @click="sumbit">发送</p>
   </div>
 </template>
  
 <script>
 import axios from "axios";
 export default {
+  data(){
+    return {
+      phonenumber:""
+
+    }
+  },
   methods: {
     uploadImg: (e, type) => {
       let file = e.target.files[0];
@@ -41,5 +48,8 @@ p {
   cursor: pointer;
   border-radius: 5px;
   background-color: #ccc;
+}
+p:hover{
+  color:red;
 }
 </style>
