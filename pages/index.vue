@@ -1,6 +1,6 @@
 <template >
   <div id="goods-add">
-    <el-form model="goodinfo" ref="goodinfo" label-width="100px" class="demo-ruleForm">
+    <el-form :model="goodinfo" ref="goodinfo" label-width="100px" class="demo-ruleForm">
       <el-form-item label="名字">
         <el-input v-model="goodinfo.name"></el-input>
       </el-form-item>
